@@ -1,0 +1,48 @@
+---
+layout: default
+filename: index.html
+collection: people
+---
+
+{% assign data = page.data %}
+<h2 class="title is-size-2">{{ page.title | smartify }}</h2>
+
+<div class="columns reverse-row-order">
+    <div class="column is-half">
+        {% include feature-image-with-caption.html %}
+    </div>
+    <div class="column is-half">
+        <p class="is-size-4">{{ data.description }}</p>
+        {% if data.birthDate %}
+            <h4 class="title lod-list-title">Born</h4>
+                <ul class="lod-list">
+                    <li>
+                        {{ data.birthDate | format_date }}{% if data.birthPlace %} in {{ data.birthPlace | lod_item }}{% endif %}
+                    </li>
+                </ul>
+        {% endif %}
+        {% if data.deathhDate %}
+            <h4 class="title lod-list-title">Born</h4>
+                <ul class="lod-list">
+                    <li>
+                        {{ data.deathDate | format_date }}{% if data.deathPlace %} in {{ data.deathPlace | lod_item }}{% endif %}
+                    </li>
+                </ul>
+        {% endif %}
+        {{ data.familyName | lod_list: "Family name" }}
+        {{ data.givenName | lod_list: "Given names" }}
+        {{ data.spouse | lod_list: "Spouse" }}
+        {{ data.parent | lod_list: "Parents" }}
+        {{ data.children | lod_list: "Children" }}
+        {{ data.sibling | lod_list: "Siblings" }}
+        {{ data.relatedTo | lod_list: "Related to" }}
+        {{ data.knows | lod_list: "Knows" }}
+        {{ data.subjectOf | lod_list: "Subject of" }}
+        {{ data.created | lod_list: "Created" }}
+        {{ data.memberOf | lod_list: "Member of" }}
+        {{ data.worksFor | lod_list: "Worked for" }}
+        {{ data.peformedIn | lod_list: "Participated in" }}
+        {{ data.attended | lod_list: "Present at" }}
+        {% include list-contexts.html %}
+    </div>
+</div>
