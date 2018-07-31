@@ -18,7 +18,7 @@ title:               "test lodbook"
 tagline:             'A story of race and belonging in White Australia'
 description:         'An attempt to use Jekyll to publish narratives enriched with Linked Open Data'
 url:                 'https://antoinecourtin.github.io'
-baseurl:             '/odbook_societe'
+baseurl:             '/lodbook_societe'
 status:              'Draft only, juillet 2018'
 author: GitHub User
 email: your-email@domain.com
