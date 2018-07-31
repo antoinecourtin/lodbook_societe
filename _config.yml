@@ -14,12 +14,12 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title:               "James Minahan's Homecoming"
+title:               "test lodbook"
 tagline:             'A story of race and belonging in White Australia'
 description:         'An attempt to use Jekyll to publish narratives enriched with Linked Open Data'
-url:                 'https://wragge.github.io'
-baseurl:             '/lodbook-james-minahan'
-status:              'Draft only, March 2017'
+url:                 'https://antoinecourtin.github.io'
+baseurl:             '/odbook_societe'
+status:              'Draft only, juillet 2018'
 author: GitHub User
 email: your-email@domain.com
 
