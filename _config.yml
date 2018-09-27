@@ -255,3 +255,5 @@ responsive_image:
   #   %{height}      Height of the resized image
   #
   output_path_format: images/resized/%{width}/%{basename}
+
+theme: jekyll-theme-slate
